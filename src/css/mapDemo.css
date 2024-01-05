@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#mapOptions {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* DirectionsComponent styles */
+.directions-container {
+  position: absolute;
+  top: 20px; /* Adjust the value to fit your needs */
+  left: 20px; /* Adjust the value to fit your needs */
+  z-index: 10; /* Ensures the component is above the map */
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 300px;
+}
+
+.directions-container input[type='text'] {
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.directions-container .mode-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.directions-container .mode-buttons button {
+  flex-grow: 1;
+  padding: 8px;
+  margin-right: 4px;
+  border: none;
+  background-color: #efefef;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.directions-container .mode-buttons button:last-child {
+  margin-right: 0;
+}
+
+.directions-container .mode-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.directions-container button[type='submit'] {
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

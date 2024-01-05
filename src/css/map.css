@@ -1,0 +1,23 @@
+#topBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#controlsContainer {
+  display: flex;
+}
+
+#mapOptions {
+  margin-right: 20px;
+}
+
+.map-wrap {
+  position: relative;
+  height: 90vh;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
